@@ -1,0 +1,260 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMSviVzBKCDPpmVTj/Sgfrd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/plorantina/Pemerograman-Dasar/blob/main/Laporan%20Pratikum%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "id": "qC85hb3Rau6t",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a9e440bf-6166-4cfd-ecb4-c296b67235f6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[23, 43, 15, 34]\n",
+            "23\n",
+            "43\n",
+            "15\n",
+            "34\n",
+            "43\n"
+          ]
+        }
+      ],
+      "source": [
+        "# deklarasi variabel\n",
+        "numbers = [23, 43, 15, 34]\n",
+        "print(numbers)\n",
+        "\n",
+        "# cara mengakses elemen dalam variabel list\n",
+        "numbers[0] #23\n",
+        "numbers[1] #43\n",
+        "numbers[2] #15\n",
+        "numbers[3] #34\n",
+        "print(numbers[0])\n",
+        "print(numbers[1])\n",
+        "print(numbers[2])\n",
+        "print(numbers[3])\n",
+        "\n",
+        "# cara mengubah nilai elemen dalam variabel list\n",
+        "numbers[2] #51\n",
+        "numbers[2] #51\n",
+        "\n",
+        "\n",
+        "print (numbers[1]) # lakukan untuk setiap indexnya dan lihat hasilnya"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel list numbers\n",
+        "numbers = [1, 2, 3,]\n",
+        "\n",
+        "# menambahkan elemen di indeks ke-4\n",
+        "numbers.insert(4, 5)  #[1, 2, 3, 5]\n",
+        "\n",
+        "# mengubah elemen di indeks ke-4\n",
+        "numbers[3] = 4  # [1, 2, 3, 4]\n",
+        "\n",
+        "# menghapus elemen di indeks ke-2\n",
+        "numbers.pop(2)  # [1, 2, 4]\n",
+        "\n",
+        "#print lalu lihat hasilnya\n",
+        "print(numbers)\n"
+      ],
+      "metadata": {
+        "id": "pQkgUGg8l18L",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5ef4dfeb-71a8-438d-846b-7cb4f3146a28"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel list\n",
+        "myList = [1, \"Rumah\", 4.5, True, [\"Kamar mandi\", \"Kamar tidur\"]]\n",
+        "\n",
+        "#  cara mengakses elemen dalam variabel list\n",
+        "myList[0] #1\n",
+        "myList[1] #\"Rumah\"\n",
+        "myList[3] #True\n",
+        "myList[4] # [\"Kamar mandi\", \"Kamar tidur\"]\n",
+        "\n",
+        "# cara mengakses elemen dalamm sublist\n",
+        "myList[4][0]  # \"Kamar mandi\"\n",
+        "myList[4][1]  # \"Kamar tidur\"\n",
+        "\n",
+        "#lakukan print lalu amati hasilnya\n",
+        "print(myList)"
+      ],
+      "metadata": {
+        "id": "bk0GuRI9s0Cw",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9d457293-0768-4558-b701-36cde25f2208"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 'Rumah', 4.5, True, ['Kamar mandi', 'Kamar tidur']]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi varibale tuple\n",
+        "numbers =(23, 43, 15, 34)\n",
+        "\n",
+        "# cara mengakses elemen dalam varibel tuple\n",
+        "numbers[0]  # 23\n",
+        "numbers[1]  # 43\n",
+        "numbers[2]  # 15\n",
+        "#lakukan print lalu amati hasilnya\n",
+        "print(numbers)"
+      ],
+      "metadata": {
+        "id": "iy5gSM05vsH3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d605a66d-9857-49d2-d076-1f1faf319450"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(23, 43, 15, 34)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel set a dan b\n",
+        "a = {1, 2, 3}\n",
+        "b = {2, 3, 4}\n",
+        "\n",
+        "# operasi gabungan\n",
+        "a.union(b)  # {1, 2, 3, 4}\n",
+        "\n",
+        "# operasi irisan\n",
+        "a.intersection(b) # {2, 3}\n",
+        "\n",
+        "# operasi perbedaan\n",
+        "a.symmetric_difference(b) #{1, 4}\n",
+        "\n",
+        "#lakukan print dan lihat hasilnya\n",
+        "print(a)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "id": "au0rUCzswe-r",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a5740d9c-1ee8-48c2-b259-f80f26ee1f9a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3}\n",
+            "{2, 3, 4}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi varibel dictionary\n",
+        "propertyDetail = {\"numFloors\":1, \"propertyType\": \"Rumah\", \"hasTerrace\": True, \"hasGarage\": False}\n",
+        "\n",
+        "# cara mengakses elemen dalam variabel dictionary\n",
+        "propertyDetail[\"numFloors\"]     # 1\n",
+        "propertyDetail[\"propertyType\"]  # Rumah\n",
+        "propertyDetail[\"hasTerrace\"]    # True\n",
+        "propertyDetail[\"hasGarage\"]     # False\n",
+        "\n",
+        "# cara mengubah nilai elemen dalam variabel dictionary\n",
+        "propertyDetail[\"hasTerrace\"] = False\n",
+        "\n",
+        "propertyDetail[\"hasTerrace\"]    # False\n",
+        "\n",
+        "#print(propertyDetail[\"propertyType\"])\n",
+        "\n",
+        "#lakukan print lalu amati hasilnya\n",
+        "print(propertyDetail)"
+      ],
+      "metadata": {
+        "id": "SLe0wWdixbPS",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3b093b7f-c0dc-41fb-ead3-027c39453a9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'numFloors': 1, 'propertyType': 'Rumah', 'hasTerrace': False, 'hasGarage': False}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
